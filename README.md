@@ -44,4 +44,24 @@ Correlation heatmap to identify feature relationships
 
 ![feature_correlation](https://github.com/user-attachments/assets/fc62e705-043c-401d-9709-2a69b0f9b960)
 
+## Models Used
+
+Two types of Support Vector Classifiers were used:
+
+- Linear SVM
+  - Grid search over C values
+  - Good baseline performance
+- RBF SVM
+  - Grid search over C and gamma
+  - Outperformed linear kernel with higher precision & recall
+
+## Model 1: SVC with Linear Kernel
+
+### Confusion Matrix
+
+![confusion_matrix_linear](https://github.com/user-attachments/assets/ff616128-0f74-4ec8-aaa5-5de82c10ab85)
+
+### Classification Report
+![image](https://github.com/user-attachments/assets/e23efd94-08b1-463c-b416-374985c58cb0)
+
 
