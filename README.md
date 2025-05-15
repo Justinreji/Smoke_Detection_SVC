@@ -64,4 +64,33 @@ Two types of Support Vector Classifiers were used:
 ### Classification Report
 ![image](https://github.com/user-attachments/assets/e23efd94-08b1-463c-b416-374985c58cb0)
 
+## Model 2: SVC with Radial Basis Function
+
+### Confusion Matrix
+
+![confusion_matrix_rbf](https://github.com/user-attachments/assets/2cf2c01b-e511-4858-a840-152462422d95)
+
+
+### Classification Report
+
+![image](https://github.com/user-attachments/assets/00ae6109-09aa-451f-a1b9-7b99ebda37d4)
+
+
+## Model Comparison
+
+![image](https://github.com/user-attachments/assets/5bc527db-b8fd-405c-a6a4-3855e5660b93)
+
+
+## Result and Interpretations
+
+Based on the confusion matrices, RBF SVM is more conservative: it never raises a false fire alarm but misses 3 more actual fire cases than the linear model. While linear SVM misclassified 15 non-fire events as fires (false positives), which may cause unnecessary alerts in real-world scenarios.
+
+This implies that RBF SVM model performed slightly better across all metrics. It achieved perfect precision (no false positives), meaning it never incorrectly predicted a fire alarm when there wasn’t one. The F1 Score is higher for RBF SVM, indicating better balance between precision and recall.
+
+## Conclusion
+
+RBF SVM is selected as the final model due to its superior overall performance, especially in precision and F1 score, which are crucial for minimizing false alarms in fire detection systems.
+
+The confusion matrices and metrics confirm it generalizes better and is safer to deploy in alarm systems where false positives are costly or disruptive.
+
 
