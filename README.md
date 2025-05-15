@@ -27,3 +27,21 @@ Records: 62,629 observations
 | **CNT**             | Sensor reading index or sample counter.                                  |
 | **Fire Alarm**      | Target variable: 1 indicates fire detected, 0 means no fire detected.    |
 
+## Data Preprocessing
+
+- Removed unnecessary columns (Unnamed: 0, UTC)
+- Handled missing values
+- Sampled 10,000 rows for efficient training
+- Normalized feature values using standard scaling
+
+## Exploratory Data Analysis
+
+Bar plot showing class imbalance between fire alarms triggered vs not triggered
+
+![fire_alarm_class_dist](https://github.com/user-attachments/assets/d2a86d35-fdbf-4acf-862a-86fab6ed6bac)
+
+Correlation heatmap to identify feature relationships
+
+![feature_correlation](https://github.com/user-attachments/assets/fc62e705-043c-401d-9709-2a69b0f9b960)
+
+
